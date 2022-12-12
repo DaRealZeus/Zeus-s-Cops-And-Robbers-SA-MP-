@@ -5,6 +5,8 @@ This Include adds wide range of SA-MP Functions which enables the Script Develop
 This include adds the following functions -
 
 ```
+native GetDayName(day); // returns the day of the week in-game
+native CreateBlood(playerid); // Creates a custom blood particle around a player, can be used with "OnPlayerTakeDamage" for visual purposes
 native GivePlayerScore(playerid, score); // Adds score to a particular player
 native SetPlayerMoney(playerid, money); // Resets money of a particular player to a particular amount
 native RemovePlayerWeapon(playerid, weaponid); // Disarms a player of a specific weapon
@@ -26,3 +28,12 @@ This include adds the following callbacks -
 ```
 public OnPlayerWalk(playerid, style) // This callback is triggered when a player begins to walk
 ```
+
+Credits -
+
+```
+Ritzy2K / Niket Gandhir - Developing this Include
+SA-MP Team (Past and Present) - For Developing San Andreas Multiplayer
+```
+
+This include was last updated on - 12 December 2022
