@@ -1,32 +1,3 @@
-/*
-	Player Functions Include (playerfunctions.inc)
-	* Some usefull player functions!
- 	Author: (creator)
-	* Ritzy2K
-	(c) Copyright 2017
-  	* This file is provided as is (no warranties).
-*/
-
-/*
-FUNCTIONS:
-native GivePlayerScore(playerid, score);
-native SetPlayerMoney(playerid, money);
-native RemovePlayerWeapon(playerid, weaponid);
-native SetPlayerFacingPoint(playerid, Float:x, Float:y);
-native IsPlayerFacingPoint(playerid, Float:x, Float:y, Float:range = 10.0);
-native SetPlayerFacingPlayer(playerid, targetid);
-native IsPlayerFacingPlayer(playerid, targetid, Float:range =  10.0);
-native IsPlayerBehindPlayer(playerid, targetid, Float:range = 10.0);
-native GetPlayerWeaponAmmo(playerid, weaponid);
-native SetPlayerWeaponAmmo(playerid, weaponid, ammo);
-native IsPlayerHavingWeapon(playerid, weaponid);
-native SetPlayerWalkingStyle(playerid, style);
-native GetPlayerWalkingStyle(playerid);
-native GetPlayerSkillLevel(playerid, skill);
-CALLBACKS:
-public OnPlayerWalk(playerid, style)
-*/
-
 //walking styles
 #define WALKING_STYLE_DEFAULT     0
 #define WALKING_STYLE_CIVILIAN    1
