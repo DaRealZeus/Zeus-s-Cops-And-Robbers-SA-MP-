@@ -1,2 +1,1 @@
-*.SourcePawn linguist-detectable=true
-*.Pawn linguist-detectable=false
+*.* linguist-language=SourcePawn
