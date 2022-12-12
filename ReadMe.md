@@ -1,3 +1,5 @@
+## Player Functions Include
+
 This Include adds wide range of SA-MP Functions which enables the Script Developers to have extra control over their players! This include is compatible with the latest version of San Andreas Multiplayer (0.3.7)
 
 This include adds the following functions -
