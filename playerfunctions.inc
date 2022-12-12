@@ -27,6 +27,22 @@
 static gWalkingStyle[MAX_PLAYERS];
 static gPlayerSkills[MAX_PLAYERS][11];
 
+stock GetDayName(day)
+{
+    static const days[7][10] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    return days[day];
+}
+
+stock CreateBlood(playerid)
+{
+	new Float:x, Float:y, Float:z;
+
+	GetPlayerPos(playerid, x, y, z);
+	SetTimerEx("DestroyBlood", 1500, false, "d", CreateDynamicObject(18668, x, y, z - 1.5, 0.0, 0.0, 0.0));
+
+	return 1;
+}
+
 stock GivePlayerScore(playerid, score)
 {
 	return SetPlayerScore(playerid, GetPlayerScore(playerid) + score);
@@ -295,3 +311,9 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 //script(not internal) callback
 forward OnPlayerWalk(playerid, style);
+
+forward DestroyBlood(objectid);
+public DestroyBlood(objectid)
+{
+	DestroyDynamicObject(objectid);
+}
