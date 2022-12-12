@@ -1,9 +1,9 @@
 /*
-	Player Functions Include (playerfuncs.inc)
+	Player Functions Include (playerfunctions.inc)
 	* Some usefull player functions!
  	Author: (creator)
-	* Gammix
-	(c) Copyright 2015
+	* Ritzy2K
+	(c) Copyright 2017
   	* This file is provided as is (no warranties).
 */
 
