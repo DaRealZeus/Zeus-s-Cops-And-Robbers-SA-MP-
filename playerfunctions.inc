@@ -43,6 +43,12 @@ stock CreateBlood(playerid)
 	return 1;
 }
 
+forward DestroyBlood(objectid);
+public DestroyBlood(objectid)
+{
+	DestroyDynamicObject(objectid);
+}
+
 stock GivePlayerScore(playerid, score)
 {
 	return SetPlayerScore(playerid, GetPlayerScore(playerid) + score);
@@ -311,9 +317,3 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 
 //script(not internal) callback
 forward OnPlayerWalk(playerid, style);
-
-forward DestroyBlood(objectid);
-public DestroyBlood(objectid)
-{
-	DestroyDynamicObject(objectid);
-}
